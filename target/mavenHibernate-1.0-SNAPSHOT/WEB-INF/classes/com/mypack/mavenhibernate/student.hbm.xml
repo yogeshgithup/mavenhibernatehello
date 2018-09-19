@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+   PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+   <class name="com.mypack.mavenhibernate.Student" table="student">
+     <id name="name" type="java.lang.String">
+         <generator class="assigned"/>
+      </id>
+
+      <property name="password" column="password" type="java.lang.String"/>
+      <property name="cno" column="cno" type="java.lang.Long"/>
+      <property name="cpi" column="cpi" type="java.lang.Float"/>
+      <property name="spi" column="spi" type="java.lang.Double"/>
+
+   </class>
+
+</hibernate-mapping>
