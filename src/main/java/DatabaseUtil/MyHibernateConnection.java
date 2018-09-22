@@ -19,7 +19,7 @@ public class MyHibernateConnection implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sceobj) {
-        System.out.println("------ci---22");
+        System.out.println("hello -----change");
         ServletContext ctx;
         try{
         sfobj = new Configuration().configure("com/mypack/mavenhibernate/hibernate.cfg.xml").buildSessionFactory();
