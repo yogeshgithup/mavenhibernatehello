@@ -70,6 +70,7 @@ public void init(ServletConfig sc) throws ServletException
         savemsg=so.insertStudent(sobj);
         
         System.out.println("Success......");
+        System.out.println("hello hitler");
         out.println(savemsg);
         response.sendRedirect("index.jsp?msg="+savemsg);
     }
